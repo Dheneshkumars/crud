@@ -1,0 +1,81 @@
+.document-container {
+    // padding-bottom: 70px;
+    // margin-top: 1rem;
+    // min-height: 101vh;
+    background-color: $white !important;
+
+    @include media-min-md{
+        margin-top: 0px;
+    }
+
+    // sticky scroll head mobile
+    .document-title-wrapper {
+       position: relative;
+    }
+    .sticky-head-document {
+        // background-color: #eff5f5;
+        position: fixed;
+        margin: -16px;
+        padding: 0.75rem 1rem;
+        width: 100%;
+        border-radius: 0.25rem;
+        top: 68px;
+        z-index: 998;
+    }
+
+    .document-head-title-sticky {
+        font-size: 14px;
+    }
+
+    .document-head-para {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .document-head-title {
+        font-size: 24px;
+    }
+    // submit for approval
+    .document-submit-approval{
+        .submit-label{
+            margin-left: 13px !important;
+            margin-top: 6px !important;
+        }
+    }
+    // .document-submitapproval-checkbox{
+    //     // padding-left: 14px;
+    // }
+    .document-data-wrapper{
+        margin-top: 63px;
+        // margin-top: 164px;
+    }
+
+    .paddingforcheckbox-document{
+        padding: 0 !important;
+        @include media-min-md{
+            padding-bottom: 10px !important;
+        }
+    }
+
+    @include media-min-sm {
+        // padding-left: 15px;
+        // padding-right: 15px;
+        // padding-bottom: 78px;
+        // margin-bottom: 1rem;
+        background-color: $whitish !important;
+    }
+
+    @include media-min-lg {
+        // width: 95%;
+        // margin: 0 auto;
+        // padding-bottom: 0;
+        // margin-bottom: 1rem;
+        padding: 20px 0 46px;
+    }
+}
+
+.backgroud-white {
+    @media screen and (max-width:575px) {
+        background-color: $white;
+    }
+}

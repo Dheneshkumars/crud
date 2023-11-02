@@ -1,0 +1,852 @@
+.landing-parent {
+    // background-color: $white !important;
+    // margin-top: 1.5rem;
+
+    // @include media-min-sm {
+    //     // padding-left: 15px;
+    //     // padding-right: 15px;
+    //     background-color: $whitish !important;
+    //     // margin-top: 2rem;
+    // }
+
+    @include media-min-md {
+        // width: 95%;
+        // margin: 2.5rem auto 0;
+    }
+
+    @include media-min-lg {
+        width: 75%;
+        margin: 2.5rem auto 0;;
+    }
+
+    @include media-min-xl {
+        margin-top: 1.75rem;
+        width: 65%;
+    }
+
+    @include media-min-xxl {
+        width: 55%;
+    }
+
+    .landing-wrapper {
+        @include media-min-md{
+            margin-top: 0rem;
+        }
+        @include media-min-lg{
+            margin-top: 0rem;
+        }
+        .completedStatus{
+            margin: 0 auto;
+            border: 1px solid #27AE60;
+            color: $completedStatusColor;
+            background: #D9ECE0;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3px 10px;
+            font-size: 11px;
+            height: 31px;
+            width: 93%;
+            .title{
+                font-size: 13px !important;
+                margin-bottom: 0px !important;
+            }
+        }
+
+        .completedMobileStatus{
+            margin: 0px auto;
+            border: 1px solid #27AE60;
+            color: #5a5a5a;
+            background: #D9ECE0;
+            border-radius: 6px;
+            margin-top: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 23px;
+            font-size: 13px;
+            height: 60px;
+            width: 95%;
+            .title{
+                font-size: 16px !important;
+                margin-bottom: 0px !important;
+                margin-top: 0px !important;
+            }
+        }
+        .needHelpMobile{
+            .landing-wrapper{
+                margin: 0 30px;
+            }
+        }
+        .title-wrapper {
+            text-align: center;
+            margin-bottom: 3rem;
+            @include media-min-md{
+                margin-bottom: 2.5rem;
+            }
+            .title{
+                margin-top: 1rem;
+                font-size: 16px;
+                font-weight: 400;
+                @include media-min-sm{
+                    margin-top: 0px;
+                }
+            }
+        }
+
+        .card-wrapper {
+            margin-bottom: 0rem;
+            @include media-min-md {
+                margin-bottom: 6rem;
+            }
+            @include media-min-xl {
+                margin-bottom: 5rem;
+            }
+
+            .card-list {
+                .removeConnection{
+                    border: none !important;
+                    background-color: unset !important;
+                }                
+                // .animate {
+                //     // width: fit-content;
+                //     width: 100%;
+                // }
+
+                // .animate {
+                //     margin: 0 0 30px;
+
+                //     @include media-min-sm {
+                //         margin: 0;
+                //     }
+                // }
+
+                // .animate:last-child {
+                //     margin: 0;
+                // }
+                @include media-min-md {
+                    margin-top: 30px;
+                }
+                @include media-min-lg {
+                    margin-top: 60px;
+                }
+                .card {
+                    min-height: 220px;
+                    max-height: 220px;
+                    min-width: 275px;
+                    max-width: 275px;
+                    border-radius: 12px;
+                    // border: none;
+                    // border: 1px solid $grayee5;
+                    // box-shadow: $black1 0px 2px 8px 0px;
+                    // height: 150px;
+                    @include media-min-sm {
+                        min-width: 250px;
+                        max-width: 250px;
+                        min-height: 220px;
+                        max-height: 220px;
+                        padding: 12px 12px !important;
+                        // border: 1px solid $litish;
+                        // height: 271px;
+                    }
+
+                    @include media-min-md {
+                        min-width: 220px;
+                        max-width: 220px;
+                        min-height: 220px;
+                        max-height: 220px;
+                        padding:  12px 12px !important;
+                    }
+
+                    @include media-min-xl {
+                        min-width: 240px;
+                        max-width: 240px;
+                        // height: 298px;
+                        // border-left: 8px solid white;
+                        // border-right: 8px solid white;
+                        // border-left: 8px solid #ECB72F;
+                        // border-right: 8px solid #ECB72F;
+                        min-height: 220px;
+                        max-height: 220px;
+                        border-radius: 10px;
+                        padding:  12px 12px !important;
+                    }
+
+                    .card-badge-between {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 0.5rem;
+                        width: 100%;
+                        cursor: pointer;
+
+                        .count-badge {
+                            margin: 0 !important;
+                            border: 1px solid #f00;
+                            color: #f00;
+                            background: rgba(255, 121, 121, 0.2);
+                            border-radius: 2px;
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                            padding: 3px 5px;
+                            font-size: 11px;
+                            height: 25px;
+                            width: fit-content;
+                            white-space: nowrap!important;
+                            @include media-min-md {
+                                font-size: 12px;
+                            }
+
+                            @include media-min-lg {
+                                font-size: 13px;
+                            }
+                        }
+
+                        .cardCompletedStatus {
+                            // margin-right: 90px;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+
+                            @include media-min-md {
+                                // margin-right: 44px;
+                            }
+
+                            @include media-min-lg {
+                                // margin-right: 44px;
+                            }
+                        }
+
+                        .mobileCardStatus{
+                            margin: 0 !important;
+                            border: 1px solid #27AE60;
+                            color: #27ae60;
+                            background: rgba(39, 174, 96, 0.2);
+                            border-radius: 2px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 3px 5px;
+                            font-size: 11px;
+                            height: 20px;
+                            width: fit-content;
+                        }
+
+                        .cardBadgeStatus {
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                        }
+
+                        .completedTick {
+                            display: flex;
+                            align-items: center;
+                            font-size: 12px;
+                            padding-top: 1px;
+                        }
+
+                        .count-complete-badge {
+                            // margin: 0 !important;
+                            // border: 1px solid#27AE60;
+                            // color: #27ae60;
+                            // background: rgba(39, 174, 96, 0.2);
+                            // border-radius: 2px;
+                            // padding: 3px 5px;
+                            // font-size: 11px;
+                            // height: 25px;
+                            // width: fit-content;
+                            margin: 0 !important;
+                            border: 1px solid #27AE60;
+                            color: #27ae60;
+                            background: rgba(39, 174, 96, 0.2);
+                            border-radius: 3px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 10px 10px;
+                            font-size: 11px;
+                            height: 18px;
+                            width: fit-content;
+
+                            @include media-min-md {
+                                font-size: 11px;
+                            }
+
+                            @include media-min-lg {
+                                font-size: 11px;
+                            }
+                        }
+                    }
+
+                    .card-badge-pending{
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 0.5rem;
+                        width: 100%;
+                        cursor: pointer;
+
+                        // .count-badge {
+                        //     margin: 0 !important;
+                        //     border: 1px solid #f00;
+                        //     color: #f00;
+                        //     background: rgba(255, 121, 121, 0.2);
+                        //     border-radius: 2px;
+                        //     display: flex;
+                        //     justify-content: flex-end;
+                        //     align-items: center;
+                        //     padding: 3px 5px;
+                        //     font-size: 11px;
+                        //     height: 25px;
+                        //     width: fit-content;
+                        //     white-space: nowrap!important;
+                        //     @include media-min-md {
+                        //         font-size: 12px;
+                        //     }
+
+                        //     @include media-min-lg {
+                        //         font-size: 13px;
+                        //     }
+                        // }
+
+                        // .cardCompletedStatus {
+                        //     // margin-right: 90px;
+                        //     display: flex;
+                        //     justify-content: flex-start;
+                        //     align-items: center;
+
+                        //     @include media-min-md {
+                        //         // margin-right: 44px;
+                        //     }
+
+                        //     @include media-min-lg {
+                        //         // margin-right: 44px;
+                        //     }
+                        // }
+
+                        // .mobileCardStatus{
+                        //     margin: 0 !important;
+                        //     border: 1px solid #27AE60;
+                        //     color: #27ae60;
+                        //     background: rgba(39, 174, 96, 0.2);
+                        //     border-radius: 2px;
+                        //     display: flex;
+                        //     justify-content: center;
+                        //     align-items: center;
+                        //     padding: 3px 5px;
+                        //     font-size: 11px;
+                        //     height: 20px;
+                        //     width: fit-content;
+                        // }
+
+                        // .cardBadgeStatus {
+                        //     display: flex;
+                        //     justify-content: flex-end;
+                        //     align-items: center;
+                        // }
+
+                        // .completedTick {
+                        //     display: flex;
+                        //     align-items: center;
+                        //     font-size: 12px;
+                        //     padding-top: 1px;
+                        // }
+
+                        .count-pending-badge {
+                            margin: 0 !important;
+                            border: 1px solid $pendingBtnCard;
+                            color: $pendingBtnCard;
+                            background: $pendingBtnBg;
+                            border-radius: 5px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 3px 15px;
+                            font-size: 11px;
+                            height: 18px;
+                            width: fit-content;
+
+                            @include media-min-md {
+                                font-size: 11px;
+                            }
+
+                            @include media-min-lg {
+                                font-size: 11px;
+                            }
+                        }
+                    }
+
+                    .card-badge-end {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 0.5rem;
+                        width: 100%;
+                        cursor: pointer;
+
+                        .count-badge {
+                            margin: 0 !important;
+                            // background:;
+                            // color: $black;
+                            border: 1px solid #CFA859;
+                            color: #CFA859;
+                            background: #F9F4E9;
+                            border-radius: 3px;
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                            padding: 10px 18px;
+                            font-size: 11px;
+                            height: 18px;
+                            width: fit-content;
+                            white-space: nowrap!important;
+                            @include media-min-md {
+                                font-size: 11px;
+                            }
+
+                            @include media-min-lg {
+                                font-size: 11px;
+                            }
+                            // @include media-min-lg {
+                            //     font-size: 11px;
+                            //     padding: 3px px;
+                            //     height: 20px;
+                            // }
+                        }
+
+                        .cardCompletedStatus {
+                            // margin-right: 90px;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+
+                            @include media-min-md {
+                                // margin-right: 44px;
+                            }
+
+                            @include media-min-lg {
+                                // margin-right: 44px;
+                            }
+                        }
+
+                        .cardBadgeStatus {
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                        }
+
+                        .completedTick {
+                            display: flex;
+                            align-items: center;
+                            font-size: 12px;
+                            padding-top: 1px;
+                        }
+
+                        .count-complete-badge {
+                            margin: 0 !important;
+                            // background:;
+                            // color: $black;
+                            border: 1px solid#27AE60;
+                            color: #27ae60;
+                            background: rgba(39, 174, 96, 0.2);
+                            border-radius: 2px;
+                            // display: flex;
+                            // justify-content: center;
+                            // align-items: center;
+                            padding: 3px 5px;
+                            font-size: 11px;
+                            height: 25px;
+                            width: fit-content;
+
+                            @include media-min-md {
+                                font-size: 12px;
+                            }
+
+                            @include media-min-lg {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+
+                    .card-badge-mobile-between {
+                        display: flex;
+                        justify-content: space-evenly;
+                        margin-bottom: 0.5rem;
+                        width: 100%;
+                        cursor: pointer;
+
+                        .count-badge {
+                            margin: 0 !important;
+                            border: 1px solid #CFA859;
+                            color: #CFA859;
+                            background: #F9F4E9;
+                            border-radius: 2px;
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                            padding: 3px 5px;
+                            font-size: 11px;
+                            height: 25px;
+                            width: fit-content;
+                            white-space: nowrap!important;
+                            @include media-min-md {
+                                font-size: 12px;
+                            }
+
+                            @include media-min-lg {
+                                font-size: 13px;
+                            }
+                        }
+
+                        .cardCompletedStatus {
+                            // margin-right: 90px;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+
+                            @include media-min-md {
+                                // margin-right: 44px;
+                            }
+
+                            @include media-min-lg {
+                                // margin-right: 44px;
+                            }
+                        }
+
+                        .mobileCardStatus{
+                            margin: 0 !important;
+                            border: 1px solid #27AE60;
+                            color: #27ae60;
+                            background: rgba(39, 174, 96, 0.2);
+                            border-radius: 4px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0px 15px;
+                            font-size: 15px;
+                            height: 30px;
+                            width: fit-content;
+                        }
+
+                        .cardBadgeStatus {
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                        }
+
+                        .completedTick {
+                            display: flex;
+                            align-items: center;
+                            font-size: 12px;
+                            padding-top: 1px;
+                        }
+
+                        .count-complete-badge {
+                            margin: 0 !important;
+                            border: 1px solid #27AE60;
+                            color: #27ae60;
+                            background: rgba(39, 174, 96, 0.2);
+                            border-radius: 4px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0px 15px;
+                            font-size: 15px;
+                            height: 30px;
+                            width: fit-content;
+
+                            @include media-min-md {
+                                font-size: 12px;
+                            }
+
+                            @include media-min-lg {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+
+                    .card-badge-mobile-end {
+                        display: flex;
+                        justify-content: space-evenly;
+                        margin-bottom: 0.5rem;
+                        width: 100%;
+                        cursor: pointer;
+
+                        .mobileCardPendingStatus{
+                            margin: 0 !important;
+                            border: 2px solid #CFA859;
+                            color: #CFA859;
+                            background: #F9F4E9;
+                            border-radius: 4px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0px 15px;
+                            font-size: 17px;
+                            height: 30px;
+                            width: fit-content;
+                        }
+                        .count-badge {
+                            margin: 0 !important;
+                            // background:;
+                            // color: $black;
+                            border: 2px solid #CFA859;
+                            color: #CFA859;
+                            background: #F9F4E9;
+                            border-radius: 5px;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            padding: 0px 15px;
+                            font-size: 17px;
+                            height: 30px;
+                            width: fit-content;
+                            white-space: nowrap!important;
+                            @include media-min-md {
+                                font-size: 12px;
+                            }
+
+                            @include media-min-lg {
+                                font-size: 13px;
+                            }
+                        }
+
+                        .cardCompletedStatus {
+                            // margin-right: 90px;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+
+                            @include media-min-md {
+                                // margin-right: 44px;
+                            }
+
+                            @include media-min-lg {
+                                // margin-right: 44px;
+                            }
+                        }
+
+                        .cardBadgeStatus {
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                        }
+
+                        .completedTick {
+                            display: flex;
+                            align-items: center;
+                            font-size: 12px;
+                            padding-top: 1px;
+                        }
+
+                        .count-complete-badge {
+                            margin: 0 !important;
+                            // background:;
+                            // color: $black;
+                            border: 1px solid#27AE60;
+                            color: #27ae60;
+                            background: rgba(39, 174, 96, 0.2);
+                            border-radius: 5px;
+                            // display: flex;
+                            // justify-content: center;
+                            // align-items: center;
+                            padding: 3px 15px;
+                            font-size: 11px;
+                            height: 25px;
+                            width: fit-content;
+
+                            @include media-min-md {
+                                font-size: 12px;
+                            }
+
+                            @include media-min-lg {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+
+
+                    .card-icon {
+                        transform: translate(0%,-290%);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #3B1D7B;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        color: white;
+                        // @include media-min-md {
+                        //     width: 80px;
+                        //     height: 80px;
+                        // }
+                        @include media-min-md {
+                            width: 65px;
+                            height: 65px;
+                            transform: translate(0%,-270%);
+                        }
+                        // @include media-min-xl {
+                        // //   top: -30px;
+                        //   width: 65px;
+                        //   height: 65px;
+                        // }
+                        svg {
+                            width: 20px;
+                            height: 20px;
+
+                            @include media-min-md {
+                                width: 22px;
+                                height: 22px;
+                            }
+                        }
+                    }
+
+                    .card-icon-grey {
+                        transform: translate(0%,-290%);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $pendingcardIconBg;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        color: white;
+                        // @include media-min-md {
+                        //     width: 80px;
+                        //     height: 80px;
+                        // }
+                        @include media-min-md {
+                            width: 65px;
+                            height: 65px;
+                            transform: translate(0%,-270%);
+                        }
+                        // @include media-min-xl {
+                        // //   top: -30px;
+                        //   width: 65px;
+                        //   height: 65px;
+                        // }
+                        svg {
+                            width: 20px;
+                            height: 20px;
+
+                            @include media-min-md {
+                                width: 22px;
+                                height: 22px;
+                            }
+                        }
+                    }
+
+                    .card-icon-pending {
+                        transform: translate(0%,-290%);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $summaryCompleted;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        color: white;
+                        // @include media-min-md {
+                        //     width: 80px;
+                        //     height: 80px;
+                        // }
+                        @include media-min-md {
+                            width: 65px;
+                            height: 65px;
+                            transform: translate(0%,-270%);
+                        }
+                        // @include media-min-xl {
+                        // //   top: -30px;
+                        //   width: 65px;
+                        //   height: 65px;
+                        // }
+                        svg {
+                            width: 20px;
+                            height: 20px;
+
+                            @include media-min-md {
+                                width: 22px;
+                                height: 22px;
+                            }
+                        }
+                    }
+
+                    .card-title {
+                        text-align: center;
+                        margin: 1rem 0;
+
+                        .title-group {
+                            .title {
+                                font-size: 16px;
+                                color: $black;
+                                font-weight: 400;
+                                @include media-min-sm {
+                                    font-size: 13px;
+                                }
+
+                                @include media-min-md {
+                                    font-size: 16px;
+                                }
+                            }
+
+                            .description {
+                                margin: 0;
+                                color: $whitegray1;
+                                font-size: 14px;
+
+                                @include media-min-sm {
+                                    font-size: 13px;
+                                }
+
+                                @include media-min-md {
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    font-weight: 100;
+                                }
+                            }
+                        }
+                    }
+
+                    .card-button {
+                        text-align: center;
+
+                        .btn {
+                            color: $white;
+                            background-color: $brownish;
+                        }
+                    }
+                }
+            }
+        }
+
+        .note-wrapper {
+            @include media-min-sm {
+                margin-bottom: 2.5rem;
+            }
+
+            .note {
+                border-radius: 0.25rem;
+                background: $greenish;
+            }
+        }
+
+        .esignNoteAnimation {
+            border-radius: 0.25rem;
+            background: $greenish;
+            animation: zoom-in-zoom-out 1s ease infinite;
+        }
+
+        @keyframes zoom-in-zoom-out {
+            0% {
+                transform: scale(1, 1);
+            }
+
+            50% {
+                transform: scale(1.1, 1.1);
+            }
+
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import "../mixin/breakpoints";
+
+.rdtPicker{
+    bottom: 74px;
+    tbody, td, tfoot, th, thead, tr{
+        border-bottom-width: 0px;
+        padding: 0px 5px;
+        @include media-min-lg{
+            padding: 0px 12px;
+        }
+        th:nth-child(1), th:nth-child(2), th:nth-child(3), th:nth-child(5){
+            padding: 10px 1px;
+        }
+    }
+}

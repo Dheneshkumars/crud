@@ -1,0 +1,238 @@
+@include media-min-lg {
+	.down {
+		position: fixed;
+		top: 65px;
+		transition: 0.5s linear;
+	}
+}
+
+.application-tab-container {
+	@include media-min-xl {
+		display: flex;
+		justify-content: center;
+	}
+
+	//z-index: 999;
+	//padding-top: 1rem;
+	width: 100%;
+
+	@include media-min-lg {
+		// margin-top: -35px;
+		// background: #eff5f5;
+		// position: fixed;
+		// top: 120px;
+		background: $whitish;
+		position: sticky;
+		top: 60px;
+		width: 100%;
+	}
+
+	.tab-wrapper {
+		@include media-min-lg {
+			padding-top: 1rem;
+			//box-shadow: 0px 6px 8px #e1d4d4;
+		}
+		.count-badge ,.count-complete-badge {
+			min-width: 36px;
+			white-space: nowrap!important;
+		}
+		.btn{
+			padding: 0.375rem 0rem !important;
+		}
+		.arrow {
+			border-radius: 4px;
+			border: none;
+			transition: all 0.5s;
+			cursor: pointer;
+			margin: 36px;
+		}
+		.tab {
+			cursor: pointer;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-radius: 0.25rem;
+			padding: 1rem;
+			background-color: $white;
+			margin: 1rem 0;
+			&:first-child{
+				margin-top: 0;
+			}
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			.icon {
+				width: 20px !important;
+				height: 20px !important;
+				@include media-min-sm {
+					width: 22px !important;
+					height: 22px !important;
+				}
+			}
+
+			.title {
+				font-size: 16px;
+				padding-left: 1rem;
+			}
+			.description {
+				font-size: 10px;
+				padding-left: 1rem;
+			}
+			.completed{
+				color: $rc-stepbg;
+			}
+			.review{
+				color: $rc-pending;
+			}
+			.submission{
+				color: $error;
+			}
+
+			.error-count-badge {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 50%;
+				width: 23px;
+				min-width: 23px;
+				height: 23px;
+				background-color: $error;
+				color: $white !important;
+				font-size: 10px;
+				font-weight: 500;
+			}
+			
+
+			@include media-min-sm {
+				background-color: $white;
+				margin-bottom: 20px;
+			}
+
+			@include media-min-lg {
+				justify-content: space-between;
+				padding-top: 0.5rem;
+				padding-bottom: 0.5rem;
+				align-items: center;
+				background: $white;
+				// min-width: 20%;
+				// // max-width: 240px;
+				// width: 100%;
+				word-break: break-word;
+				height: 50px;
+				// transition: 4s;
+				margin: 0;
+
+				.title-group {
+					.title {
+						font-size: 11px;
+						padding-left: 0;
+						margin: 0;
+					}
+
+					.description {
+						padding-top: 4px;
+						font-size: 10px;
+						padding-left: 0;
+					}
+				}
+			}
+		}
+
+		.active-tab {
+			background-color: $tab-voilet;
+			color: $voilet4;
+		}
+
+		.error {
+			background-color: $errorField;
+			color: $error;
+		}
+
+		.completed-tab {
+			background-color: $completedTabBackground;
+			color: $white;
+			p{
+				color: $white;
+			}
+		}
+		.reviewed-tab{
+			background-color: rgba(40, 167, 69, 0.2);
+			color: $black;
+			p{
+				color: $black;
+			}
+		}
+
+		.btn {
+			svg {
+				fill: $black !important;
+			}
+		}
+
+		.disabled-slider {
+			svg {
+				fill: $black1 !important;
+			}
+		}
+
+		@include media-min-sm {
+			width: 75%;
+			margin: 0 auto;
+		}
+
+		@include media-min-lg {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			max-width: fit-content;
+			// overflow-x: scroll;
+			padding-bottom: 1rem;
+			// margin: 0px;
+			.pointer-start {
+				clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 0% 0%, 0% 0%);
+			}
+
+			.pointer {
+				padding-left: 2rem;
+				clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+			}
+
+			.pointer-end {
+				padding-left: 2rem;
+				clip-path: polygon(100% 0%,
+						100% 100%,
+						75% 100%,
+						0% 100%,
+						10% 50%,
+						0% 0%);
+			}
+		}
+
+	}
+}
+.down {
+	.tab-wrapper {
+		.tab {
+			@include media-min-lg {
+				height: 40px;
+			}
+			.title-group {
+				.title {
+					@include media-min-lg {
+						font-size: 10px;
+					}
+				}
+				.description {
+					font-size: 8px;
+				}
+			}
+			.error-count-badge {
+				height: 21px;
+				width: 21px;
+				font-size: 8px;
+			}
+		}
+	}
+}

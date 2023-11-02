@@ -1,0 +1,51 @@
+//  info popup
+.__floater .__floater__body .react-joyride__tooltip div div {
+    padding: 8px 8px 8px 5px !important;
+}
+
+.__floater .__floater__body .react-joyride__tooltip {
+    background-color: $bg-tourjs1 !important;
+    width: 332px !important;
+    border-radius: 10px !important;
+    padding: 8px 12px 20px !important;
+    overflow: hidden;
+}
+
+.__floater .__floater__body .react-joyride__tooltip .appInfo-para {
+    margin-bottom: 5px !important;
+}
+
+.__floater .__floater__body .react-joyride__tooltip div {
+    margin-top: 2px !important;
+}
+
+.react-joyride__tooltip {
+    color: $white !important;
+}
+
+.__floater .__floater__body .react-joyride__tooltip div [data-action="primary"] {
+    padding: 0px 21px !important;
+    border: 1px solid !important;
+    color: $bg-tourjs !important;
+}
+
+.__floater .__floater__body .react-joyride__tooltip div [data-action="back"] {
+    margin-right: 12px !important;
+}
+
+strong {
+    color: $white;
+}
+
+.__floater {
+    top: -20px !important;
+    padding: 13px 0px 0px !important;
+}
+
+.appInfo-title {
+    font-size: 14px !important;
+}
+
+.appInfo-para {
+    font-size: 11px !important;
+}

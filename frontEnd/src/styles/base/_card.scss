@@ -1,0 +1,39 @@
+.card {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    @include media-min-sm {
+        // flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    @include media-min-md {
+        // flex-direction: column;
+        // flex-direction: column-reverse;
+        padding: 1rem;
+    }
+  
+    .card-button {
+        transform: translate(0%, 230%);
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            border: none !important;
+            @include media-min-sm {
+                font-size: 12px;
+            }
+
+            @include media-min-md {
+                font-size: 10px;
+                padding: 5px 40px;
+                // transform: translate(0%, 400%);
+            }
+        }
+    }
+}

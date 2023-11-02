@@ -1,0 +1,18 @@
+.title-group {
+    .title {
+        font-size: 18px;
+        @include media-min-md {
+            font-size: 20px;
+        }
+    }
+    .description {
+        font-size: 11px;
+        margin: 0;
+        color:$brownish1;
+        @include media-min-md {
+            font-size: 12px;
+            color:$brownish1;
+            font-weight: 400;
+        }
+    }
+}

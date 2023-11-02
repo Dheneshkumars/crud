@@ -1,0 +1,27 @@
+.date-range{
+    left:15px;
+    bottom: 65px;
+    @include media-min-md{
+        bottom: 65px;
+        left: 11px;
+    }
+    .rdrCalendarWrapper{
+        font-size: 9px;
+        @include media-min-md{
+            font-size: 10px;
+        }
+        .rdrMonthAndYearWrapper{
+            height:40px !important;
+            @include media-min-md{
+                height:40px !important; 
+            }
+        }
+        .rdrMonths{
+            display:grid !important;
+            @include media-min-md{
+                display: flex !important;
+            }
+        }
+    }
+    
+};

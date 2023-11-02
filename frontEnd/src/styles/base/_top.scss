@@ -1,0 +1,33 @@
+@include media-min-lg {
+    .top {
+        color: #3c2d8a;
+        padding:10px;
+        display: inline-block;
+        position: relative;
+        left: 76%;
+        top: -80px;
+        border: none;
+        border-color: white;
+        text-decoration: none;
+        transition: all .3s ease-out;
+        background-color: #eff5f5;
+        font-size: 15px;
+        font-weight: bold;
+        @include media-min-lg {
+            left: 77%;
+            margin-top: 6rem;
+        }
+        @include media-min-xl {
+            left: 6.5rem;
+            margin-top: .1rem;
+        }
+    }
+    .to-top:hover {
+        color: #311d96;
+        border-color: #311d96;
+    }
+
+    .to-top:hover:before {
+        transform: rotate(360deg);
+    }
+}

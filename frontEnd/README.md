@@ -6,6 +6,23 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+when ever changes on package.json file need to run below command and restart the web server again.
+### `npm install`
+
+Open the three terminals and run the below commands on each terminal one by one, 
+### `npm run dataServer`
+### `npm run localeServer`
+### `npm run uiServer`
+
+
+Runs the app in the development mode.\
+Open [http://localhost:4000/schema](http://localhost:4000/schema) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+
+Open fourth terminal to start the application and run below command
 ### `npm start`
 
 Runs the app in the development mode.\

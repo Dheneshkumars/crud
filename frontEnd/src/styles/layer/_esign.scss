@@ -1,0 +1,207 @@
+.esign-container {
+    // padding-bottom: 70px;
+    // margin-top: 1rem;
+    background-color: $white !important;
+
+    @include media-min-sm {
+        // padding-left: 15px;
+        // padding-right: 15px;
+        // padding-bottom: 78px;
+        // margin-bottom: 1rem;
+        background-color: $whitish !important;
+    }
+
+    @include media-min-lg {
+        padding-bottom: 0;
+        margin-bottom: 1rem;
+    }
+    // image 
+    .image-style{
+        width:260px;
+        @include media-min-lg{
+            width:50%;
+        }
+    }
+    // end image
+    .e-sign-parent{
+        .e-sign-data-wrapper{
+            @include media-min-lg{
+                // padding-bottom: 60px;
+                padding: 20px 0 80px;
+            }
+            .e-sign-title-wrapper {
+                .e-head-title {
+                    font-size: 24px;
+                }
+                .e-head-para {
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                    @include media-min-lg{
+                        font-size: 16px;
+                    }
+                }
+                @include media-min-lg{
+                    padding: 10px 0px;
+                }
+            }
+            .e-sign-content-wrapper-pending{
+                margin-top: 30px;
+            }
+            .e-sign-content-wrapper {
+                margin-top: 105px;
+                // margin-top: 63px;
+                padding: 10px;
+        
+                @include media-min-md {
+                    margin-top: 0px !important;
+                    padding: 15px !important;
+                }
+        
+                // @include media-min-lg{
+                @media (min-width: #{992px}) {
+                    padding: 30px 25px;
+                }
+                .e-content-para {
+                    font-size: 15px;
+                }
+        
+                .e-content-count-title {
+                    font-size: 16px;
+        
+                    @include media-min-lg {
+                        font-size: 18px;
+                    }
+                }
+        
+                .e-sign-badge {
+                    font-size: 10px;
+                    padding-left: 1px 2px !important;
+                }
+        
+                .template_id_esign {
+                    color: #6e6893;
+                }
+        
+                .e-sign-content-para-date,
+                .template_id_esign {
+                    font-size: 13px;
+                    margin: 8px;
+                    margin-left: 0px;
+                }
+        
+                .e-sign-mobile-para {
+                    margin: 5px 0px;
+                }
+        
+                .mobile-eign-table {
+                    border: 1px solid lightgray;
+                    border-left: 0px;
+                    border-right: 0px;
+                    border-top: 0px;
+                    padding: 15px 0px;
+                }
+                .mobile-eign-table:last-child{
+                    border-bottom: 0px;
+                }
+        
+                .e-sign-table {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .status-e-sign {
+                        font-size: 12px;
+                        @include media-min-md {
+                            font-size: 14px;
+                        }
+        
+                        p {
+                            margin-bottom: 12px;
+                        }
+                    }
+                    @include media-min-lg {
+                        padding-bottom: 5px;
+                    }
+                }
+                .btn-esign {
+                    cursor: pointer;
+                    padding: 8px 12px;
+                    font-size: 12px;
+                    border-radius: 3px;
+                    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                }
+                .e-sign-table-container {
+                    width: 100%;
+                    @include media-min-lg {
+                        padding: 10px 15px;
+                    }
+                    th:nth-child(1),
+                    th:nth-child(2),
+                    th:nth-child(3),
+                    th:nth-child(5) {
+                        padding: 15px 16px;
+                    }
+        
+                    .e-sign-table {
+                        .button-icon {
+                            padding: 8px;
+                            font-size: 12px;
+                        }
+        
+                        .tableBtn {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // submit approval e-sign
+    .submit-for-approval {
+        font-size: 12px;
+    }
+    .e-sign-checkbox{
+        .submit-label{
+            font-size: 13px !important;
+            margin-left: 13px !important;
+            margin-top: 5px; 
+        }
+    }
+    // scroll
+    .esign-head-title-sticky {
+        font-size: 14px;
+        margin-top: 8px;
+        margin-bottom: 0px;
+    }
+
+    .status-e-sign-scroll {
+        font-size: 12px;
+        padding-left: 5px;
+        color: #5a5a5a;
+        margin-bottom: 11px !important;
+
+        @include media-min-md {
+            margin-bottom: 0px !important;
+
+            p {
+                margin: 0px !important;
+            }
+        }
+    }
+    .e-sign-sticky {
+        position: fixed;
+        top: 70px;
+        background-color: white;
+        padding: 10px 21px;
+        margin: -16px;
+        scroll-behavior: smooth;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .e-sign-submit-count{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 14px;
+    }
+}

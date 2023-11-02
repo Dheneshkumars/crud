@@ -1,0 +1,18 @@
+.table-responsive {
+    .created_at_date {
+        font-size: 14px;
+    }
+    .form_name_esign{
+        font-size: 14px;
+    }
+    .pending-on {
+        color: #6e6893;
+        margin-top: 5px;
+        white-space: nowrap
+    }
+    .table-data-paragraph {
+        @include media-min-md {
+            text-align: end;
+        }
+    }
+}

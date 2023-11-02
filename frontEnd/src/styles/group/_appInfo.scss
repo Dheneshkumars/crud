@@ -1,0 +1,76 @@
+.__floater{
+    top: -20px !important;
+    z-index: 999 !important;
+    .__floater__body{
+        .react-joyride__tooltip{
+            background-color: #00B976 !important;
+            width:335px !important;
+            height: 140px !important;
+            border-radius: 10px !important;
+            padding: 8px 12px 20px!important;
+            div{
+                margin-top: 0px !important;
+                [data-action=primary]{
+                    background: #95E7C8 !important;
+                    height: 28px !important;
+                    min-width: auto !important;
+                    line-height: 20px !important;
+                    padding: 0px 15px !important;
+                    border-radius: 999em !important;
+                    color: #fff !important;
+                    font-size: 12px !important;
+                    border: 2px solid #95E7C8;
+                    letter-spacing: 2px !important;
+                    z-index: 0;
+                }
+                [data-action=primary]:focus {outline:0;}
+                [data-action=back]{
+                    background: transparent !important;
+                    height: 28px !important;
+                    min-width: auto !important;
+                    line-height: 20px !important;
+                    padding: 0px 15px !important;
+                    border-radius: 999em !important;
+                    color: #fff !important;
+                    font-size: 12px !important;
+                    border: 2px solid #95E7C8 !important;
+                    letter-spacing: 2px !important;
+                }
+            }
+        }
+        .react-joyride__tooltip{
+            color: $white !important;
+            div{
+                div{
+                    padding: 8px 8px 10px 5px !important;
+                }
+                button{
+                    color: $white !important;
+                }
+            }
+        }
+        .react-joyride__tooltip div:last-child{
+            button:first-child{
+                padding: 0px !important;
+            }
+        }
+        .react-joyride__tooltip{
+            .appInfo-title{
+                font-size: 15px;
+            }
+           .appInfo-para{
+                font-size: 12px;
+                margin-bottom: 0px !important;
+           }
+        }
+        .__floater__arrow{
+            span{
+                svg{
+                    polygon{
+                        fill: #00B976;
+                    }
+                }
+            }
+        }
+    }
+}

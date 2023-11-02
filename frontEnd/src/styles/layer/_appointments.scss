@@ -1,0 +1,134 @@
+.appointment-container {
+    padding-bottom: 70px;
+    margin-top: 1rem;
+    background-color: $white !important;
+
+    @include media-min-sm {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 78px;
+        margin-bottom: 1rem;
+        background-color: $whitish !important;
+    }
+
+    .appointment-content-wrapper {
+        padding: 10px;
+        width: 80%;
+        margin: 0 auto;
+
+        // calendar left side
+        .calendar-appointment {
+            @include media-min-md {
+                width: 30%;
+                padding-right: 20px;
+                border-right: 2px solid #eee;
+            }
+
+            .fc {
+                height: 428px;
+            }
+
+            .fc-scrollgrid-section-header th {
+                padding: 5px !important;
+                border: unset !important;
+            }
+
+            .fc-toolbar-title {
+                font-size: 14px !important;
+            }
+
+            .fc-theme-standard td {
+                border: 0.5px solid #f7efef !important;
+            }
+
+            .fc td,
+            .fc th {
+                vertical-align: top;
+                padding: 0;
+            }
+
+            .fc table {
+                font-size: 12px;
+                font-weight: 400;
+                font-family: "Rubik", sans-serif;
+            }
+
+            .fc-daygrid-day-number {
+                color: #333 !important;
+                padding: 5px !important;
+
+                a {
+                    text-decoration: none;
+                    background-color: transparent;
+                }
+            }
+
+            // calendar head
+            .fc thead th {
+                background-color: unset !important;
+            }
+
+            .fc .fc-col-header-cell-cushion {
+                text-decoration: none;
+                color: black;
+                background-color: transparent
+            }
+
+            .fc-button-primary {
+                color: #333 !important;
+                background-color: #f4f6fa !important;
+                border-color: #f4f6fa !important;
+                border: 0 !important;
+                padding: 5px 8px !important;
+                border-radius: 0px !important;
+            }
+
+            .fc .fc-today-button.fc-button-primary {
+                margin-left: 6px !important;
+                border-radius: 0px !important;
+                color: #fff !important;
+                background-color: #5047c7 !important;
+                border-color: #5047c7 !important;
+                border: 0 !important;
+                padding: 5px 12px !important;
+                text-transform: capitalize;
+            }
+        }
+
+        // scedule & appointment right
+        .scehudule-appointment {
+            @include media-min-md {
+                width: 70%;
+            }
+
+            .scehudule-tab,
+            .appointments-tab {
+                list-style: none;
+            }
+
+            .tabs {
+                background: none;
+                border: 0;
+                border-bottom: 1px solid #eeefef !important;
+                flex-wrap: nowrap !important;
+                padding: 0px;
+            }
+        }
+    }
+
+    .fc .fc-today-button.fc-button-primary {
+        margin-left: 6px !important;
+        border-radius: 0px !important;
+        color: #fff !important;
+        background-color: #5047c7 !important;
+        border-color: #5047c7 !important;
+        border: 0 !important;
+        padding: 5px 12px !important;
+        text-transform: capitalize;
+    }
+}
+
+.appointment-parents {
+    width: 80%;
+    margin: 0 auto;
+}

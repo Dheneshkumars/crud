@@ -1,0 +1,40 @@
+.uploadstyle{
+    font-size: 12px;
+    margin-bottom: 5px;
+    color:$copy1;
+}
+.hid-file{
+    position: absolute;
+        z-index: 1000;
+        opacity: 0;
+        cursor: pointer;
+        right: 0;
+        top: 0;
+        height: 100%;
+        font-size: 24px;
+        width: 100%;
+}
+.fileWrapper{
+    background: $copy3;
+    position: relative;
+    color: $copy4;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+   
+    font-size: 12px;
+    padding: 5px;
+    @include media-min-md{
+        width: 350px;
+    }
+    // @media screen and (max-width:375px){
+    //     width: 255px !important;
+    // }
+  }
+.pdf-text-wrapper{
+    font-size: 12px;
+    white-space: nowrap; 
+    width: 150px !important; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}

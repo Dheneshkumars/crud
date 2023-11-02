@@ -1,0 +1,105 @@
+.badge {
+    padding: 3px 10px !important;
+    border-radius: 2px !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    margin-top: 15px;
+    margin: 22px 8px !important;
+}
+
+.badge-blue-v1 {
+    background-color: #2282bc33 !important;
+    color: #2282bc;
+    border: 1px solid #2282bc !important;
+    border-bottom-width: 1px !important;
+    font-size: 12px !important;
+
+    @media screen and (max-width: 475px) {
+        font-size: 11px !important;
+    }
+}
+
+.badge-blue {
+    background: rgba(51, 102, 255, 0.2);
+    border: 1px solid #36f !important;
+    color: #36f;
+    border-bottom-width: 1px !important;
+    font-size: 12px !important;
+}
+
+.badge-red {
+    background: rgba(235, 87, 87, 0.2);
+    border: 1px solid #eb5757 !important;
+    color: #eb5757;
+    border-bottom-width: 1px !important;
+    font-size: 12px !important;
+}
+
+.badge-orange {
+    background: #ffe6d0 !important;
+    border: 1px solid $orange !important;
+    color: $orange;
+    border-bottom-width: 1px !important;
+    border-radius: 2px !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+}
+
+.badge-green {
+    border: 1px solid #27ae60 !important;
+    background: rgba(39, 174, 96, 0.2);
+    color: #27ae60;
+    border-bottom-width: 1px !important;
+    border-radius: 2px !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+}
+
+.badge-brown {
+    background-color: #fcebdb !important;
+    color: #b88a01;
+    border: 1px solid #b88a01 !important;
+    border-bottom-width: 1px !important;
+    border-radius: 2px !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    @media screen and (max-width: 475px) {
+        font-size: 11px !important;
+    }
+}
+
+.count-badge {
+    margin: 0 !important;
+    border: 1px solid #f00;
+    color: #f00;
+    background: rgba(255, 121, 121, 0.2);
+    border-radius: 2px;
+    padding: 2px 4px;
+    font-size: 9px;
+    line-height: 1.5;
+    @include media-min-md {
+        font-size: 10px;
+    }
+    @include media-min-lg {
+        font-size: 13px;
+    }
+    @include media-min-xl {
+        font-size: 11px;
+    }
+}
+.count-complete-badge {
+    margin: 0 !important;
+    border: 1px solid #27ae60;
+    color: #27ae60;
+    background: rgba(39,174,96,.2);
+    border-radius: 2px;
+    padding: 2px 4px;
+    font-size: 9px;
+    line-height: 1.5;
+    @include media-min-md {
+        font-size: 10px;
+    }
+    @include media-min-lg {
+        font-size: 13px;
+    }
+}

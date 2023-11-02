@@ -1,0 +1,20 @@
+.rdt {
+    .rdtPicker {
+        min-height: 200px;
+        .rdtCounter {
+            width: 65px;
+            .rdtCount {
+                height: 100% !important;
+                padding-top: 40px;
+                font-weight: 700;
+            }
+            .rdtCount:hover {
+                background-color: $grayish;
+            }
+        }
+    }
+}
+
+.rdtCounterSeparator {
+    line-height: 11.8rem !important;
+}

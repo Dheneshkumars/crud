@@ -1,0 +1,36 @@
+.Error_border {
+    @include media-min-md{
+       display: flex;
+    }
+    .Error_left {
+        @include media-min-md{
+            width: 50%;
+        }
+        @include media-min-lg{
+            padding:150px;
+        }
+        padding: 65px;
+        .fonts {
+            font-size: 6rem;
+            font-weight: 500
+        }
+        .line {
+            height: 2px;
+            background-color: $voilet7;
+            width: 40px
+        }
+        button{
+            letter-spacing: 1px;
+        }
+    }
+    .Error_right{
+        @include media-min-md{
+           width:50%;
+        }
+        img {
+            width: 100%
+        }
+    }
+}
+
+

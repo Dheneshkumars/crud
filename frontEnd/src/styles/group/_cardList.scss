@@ -1,0 +1,88 @@
+.card-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    @include media-min-md {
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    .status-divider{
+        background-color: $white;
+        min-width: 28px;
+        min-height: 50px;
+        @include media-min-md {
+            min-width: 30px;
+            min-height: 30px;
+        }
+        @include media-min-lg {
+            min-width: 30px;
+            min-height: 25px;
+        }
+    }
+    .status-divider-yellow{
+        background-color: $summaryWarning;
+        min-width: 28px;
+        min-height: 50px;
+        @include media-min-md {
+            min-width: 30px;
+            min-height: 30px;
+        }
+        @include media-min-lg {
+            min-width: 30px;
+            min-height: 25px;
+        }
+    }
+
+    .status-divider-blue{
+        background-color: $summaryCompleted;
+        min-width: 28px;
+        min-height: 50px;
+        @include media-min-md {
+            min-width: 30px;
+            min-height: 30px;
+        }
+        @include media-min-lg {
+            min-width: 30px;
+            min-height: 25px;
+        }
+    }
+    // Start : Card animation
+    //======================================//
+    // .front, .back {
+    //     overflow: hidden;
+    //     backface-visibility: hidden;
+    //     transition: transform 0.6s linear;
+    // }
+    // .front {
+    //     transform: rotateY(0deg);
+    //     position: absolute;
+    // }
+    // .back {
+    //     transform: rotateY(-180deg);
+    //     position: relative;
+    //     background: #fdd7d8
+    // }
+    // .one {
+    //     width: 100% !important;
+    //     transition: transform 0.2s !important;
+    //     scale: 101%;
+    //     &:hover {
+    //         transform: scale(1.03) !important;
+    //     }
+    // }
+    // .one.rotated>.front {
+    //     transform: rotateY(180deg);
+    // }
+    // .one.rotated>.back {
+    //     transform: rotateY(0deg);
+    // }
+    // .back_button {
+    //     background-color: red;
+    //     padding: 6px 26px;
+    //     color: white;
+    //     font-size: 13px;
+    // }
+    // End : Card animation
+    //======================================//
+}
