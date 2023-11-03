@@ -2,6 +2,7 @@
   "name": "crud_application",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8088",
   "dependencies": {
     "@fullcalendar/daygrid": "^5.11.3",
     "@fullcalendar/react": "^5.11.2",
@@ -63,7 +64,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:8088",
   "devDependencies": {
     "typescript": "^4.9.4"
   }

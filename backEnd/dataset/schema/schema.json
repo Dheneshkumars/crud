@@ -1,0 +1,61 @@
+{
+    "id":1,
+    "form":[
+        {
+            "name":"Login",
+            "title":"Login Form",
+            "email":{
+                "title":"Email",
+                "regex":"",
+                "validation":true,
+                "count":1
+            },
+            "password":{
+                "title":"Password",
+                "valdation":true,
+                "count":1
+            },
+            "button":{
+                "title":"Login",
+                "count":1
+            }
+        },
+        {
+            "name":"SignUp",
+            "title":"Signup Form",
+            "fname":{
+                "title":"First Name",
+                "id":"fname",
+                "validation":true,
+                "count":1
+            },
+            "lname":{
+                "title":"last Name",
+                "id":"lname",
+                "validation":false,
+                "count":1
+            },
+            "email":{
+                "title":"Email",
+                "id":"email",
+                "regex":"",
+                "validation":true,
+                "count":1
+            },
+            "password":{
+                "title":"Password",
+                "valdation":true,
+                "id":"password"
+            },
+            "confirm_password":{
+                "title":"Confirm Password",
+                "valdation":true,
+                "id":"confirm_password"
+            },
+            "button":{
+                "title":"Signup",
+                "count":1
+            }
+        }
+    ]
+}
